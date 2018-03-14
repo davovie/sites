@@ -1,0 +1,119 @@
+﻿body 
+{
+	margin :0px;
+	padding:0px;
+	text-align: left;
+	background-color:Gray;
+}
+.container
+{
+	width:100%;
+	min-height:650px;
+	background-color:White;
+	margin-left:100px;
+	
+	}
+
+.menu {
+    margin-top: 2px;
+    margin-left: 155px;
+    height: 35px;
+    
+}
+.leftbar
+{
+	width:70px;
+	float:left;
+	height:400px;
+}
+.rightbar
+{
+	width:100px;
+	float :right;
+	height:400px;
+}
+.content
+{
+	
+	min-height:400px;
+	width:900px;
+	margin-left:155px;
+	margin-top:5px;
+	margin-bottom:10px;
+}
+#menu, ul.filesub,ul.mtcesub, ul.transsub, ul.rptsub, ul.listsub 
+{
+	list-style-type: none;
+	margin: 0px;
+	padding: 0px;
+}
+#menu a
+{
+	width: 100%;
+	text-decoration: none;
+	display: block;
+	width: 125px;
+	height: 30px;
+	line-height: 25px;
+	background-color: rgb(10,178,44);
+	border: 1px solid #CCC;	
+	margin: 0px 0px 2px;
+	color: rgb(255,255,255);
+    border-radius: 5px;
+}
+ul#menu .listsub a 
+{
+		margin-left: 0px;
+}
+ul#menu li:hover > a
+{
+	background-color: rgb(10,110,14);
+}
+ul#menu li
+{
+	width: 125px;
+	text-align:center;
+	position:relative;
+	float :left;	/*float main menu horizontaly*/
+	margin-right: 2px; /*add space btw main menus*/
+	
+}
+
+ul#menu li:hover a:hover
+{
+	background-color: #99cc00;
+}
+
+ul#menu ul.filesub, ul.mtcesub, ul.transsub, ul.rptsub
+{
+	display:none;
+	position :absolute;
+	top : 31px; /*add space btw main and sub menus*/
+	left:0px;
+    right: 0px;
+}
+ul#menu ul.rptsub .listsub
+{
+	display:none;
+	position :absolute;
+	top: 0px;
+	left: 125px; /*add space btw main and sub  sub menus*/
+}
+
+ul#menu li:hover ul.filesub, li:hover ul.mtcesub,li:hover ul.transsub, li:hover ul.rptsub
+{
+	display: block;
+}
+
+ul#menu .rptsub li:hover ul.listsub
+{
+	display: block; /*display sub sub menus*/
+}
+#footer {
+    width: 1080px;
+    border-radius: 5px;
+    clear: both;
+    height: 50px;
+    margin-top: 3px;
+    margin-left: 100px;
+}

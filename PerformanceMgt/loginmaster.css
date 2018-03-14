@@ -1,0 +1,113 @@
+﻿body 
+{
+	margin :0px;
+	padding:0px;
+	text-align: left;
+}
+.container
+{
+	width:1080px;
+	height:500px;
+
+}
+.header
+{
+	
+	height:50px;
+}
+.menu
+{
+	
+	margin-top:5px;
+	height:50px;
+}
+.leftbar
+{
+		width:250px;
+	float:left;
+	height:400px;
+}
+.rightbar
+{
+		width:200px;
+	float :right;
+	height:400px;
+}
+.content
+{
+	border: 3px solid #99CC00;
+	height:210px;
+	width:397px;
+	margin-left:450px;
+	margin-top:100px;
+}
+#menu, ul.filesub,ul.mtcesub, ul.transsub, ul.rptsub, ul.listsub 
+{
+	list-style-type: none;
+}
+#menu a
+{
+	width: 100%;
+	text-decoration: none;
+	display: block;
+	width: 125px;
+	height: 25px;
+	line-height: 25px;
+	background-color: rgb(10,178,44);
+	border: 1px solid #CCC;	
+	margin: 0px 0px 2px;
+	color: rgb(255,255,255);
+}
+ul#menu .listsub a 
+{
+		margin-left: 0px;
+}
+ul#menu li:hover > a
+{
+	background-color: rgb(10,110,14);
+}
+ul#menu li
+{
+	width: 125px;
+	text-align:center;
+	position:relative;
+	float :left;	/*float main menu horizontaly*/
+	margin-right: 4px; /*add space btw main menus*/
+	
+}
+
+ul#menu li:hover a:hover
+{
+	background-color: #99cc00;
+}
+
+ul#menu ul.filesub, ul.mtcesub, ul.transsub, ul.rptsub
+{
+	display:none;
+	position :absolute;
+	top : 29px; /*add space btw main and sub menus*/
+	left:0px;
+}
+ul#menu ul.rptsub .listsub
+{
+	display:none;
+	position :absolute;
+	top: 0px;
+	left: 90px;
+}
+
+ul#menu li:hover ul.filesub, li:hover ul.mtcesub,li:hover ul.transsub, li:hover ul.rptsub
+{
+	display: block;
+}
+
+ul#menu .rptsub li:hover ul.listsub
+{
+	display: block;
+}
+.footer
+{
+	
+	clear:both;
+	height:50px;
+}

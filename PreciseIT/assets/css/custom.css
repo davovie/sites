@@ -1,0 +1,20 @@
+﻿body {
+}
+
+#desc{
+    color: #fbc73a;
+    text-transform: none;
+}
+
+#slt {
+    font-size: 5.0em;
+}
+
+#desc-1 {
+    margin-right: 100px;
+    color: #fbc73a;
+}
+
+.list-unstyled{
+    list-style: none;
+}

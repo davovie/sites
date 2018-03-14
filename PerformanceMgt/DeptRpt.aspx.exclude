@@ -1,0 +1,44 @@
+﻿<%@ Page Language="C#" MasterPageFile="~/ReportMaster.master" AutoEventWireup="true" CodeFile="DeptRpt.aspx.cs" Inherits="DeptRpt" Title="Dept Report Page" %>
+
+
+<%@ Register assembly="Microsoft.ReportViewer.WebForms, Version=9.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" namespace="Microsoft.Reporting.WebForms" tagprefix="rsweb" %>
+
+<%@ Register assembly="CrystalDecisions.Web, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304" namespace="CrystalDecisions.Web" tagprefix="CR" %>
+
+<asp:Content ID="Content1" ContentPlaceHolderID="head" Runat="Server">
+</asp:Content>
+<asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder2" Runat="Server">
+   
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+   <script type="text/javascript">
+function Print() {  
+        var dvReport = document.getElementById("dvReport");  
+        var frame1 = dvReport.getElementsByTagName("iframe")[0];  
+        if (navigator.appName.indexOf("Internet Explorer") != -1 || navigator.appVersion.indexOf("Trident") != -1) {  
+            frame1.name = frame1.id;  
+            window.frames[frame1.id].focus();  
+            window.frames[frame1.id].print();  
+        } else {  
+            var frameDoc = frame1.contentWindow ? frame1.contentWindow : frame1.contentDocument.document ? frame1.contentDocument.document : frame1.contentDocument;  
+            frameDoc.print();  
+        }  
+    }  
+</script>
+<input type="button" id="btnPrint" value="Print" onclick="Print()" />
+</asp:Content>
+<asp:Content ID="Content3" ContentPlaceHolderID="ContentPlaceHolder1" Runat="Server">
+    <asp:ObjectDataSource ID="ObjectDataSource1" runat="server" 
+        TypeName="DataSet1TableAdapters."></asp:ObjectDataSource>
+    <asp:ScriptManager ID="ScriptManager1" runat="server">
+</asp:ScriptManager>
+<div id="dvReport">
+<CR:CrystalReportViewer ID="CrystalReportViewer1" runat="server" 
+    AutoDataBind="true" DisplayToolbar="False" HasCrystalLogo="False" 
+        HasDrillUpButton="False" HasExportButton="False" HasGotoPageButton="False" 
+        HasPageNavigationButtons="False" HasPrintButton="False" HasSearchButton="False" 
+        HasToggleGroupTreeButton="False" HasViewList="False" 
+        HasZoomFactorList="False" />
+    </div> 
+    
+</asp:Content>
+

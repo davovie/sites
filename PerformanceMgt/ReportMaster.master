@@ -1,0 +1,85 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="ReportMaster.master.cs" Inherits="MasterPage" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title>Home</title>
+    <script src="Styles/bootstrap.js"></script>
+    <link href="Styles/bootstrap.css" rel="stylesheet" />
+    <link href="Reportmaster.css" rel="stylesheet" type="text/css" />
+    <asp:ContentPlaceHolder id="head" runat="server">
+    
+    </asp:ContentPlaceHolder>
+
+</head>
+<body>
+    <form id="form1" runat="server">
+    <div class="container">
+        <div class="jumbotron">
+           <h1 class="page-header">MMS! <small>Omotoso Electric Power</small></h1>
+        </div>
+   
+     <div class="menu">
+     <ul id="menu">
+                <li><a href="Login.aspx">File</a>
+                       <ul class="filesub">
+                          <li><a href="Login.aspx">Login</a></li>
+                            <li><a href="#">Backup</a></li>
+                            <li><a href="frmMain.aspx">Logout</a></li>
+                       </ul>
+                      </li> 
+                    <li><a href="#">Maintaince</a>
+                    <ul class="mtcesub">
+                          <li><a href="#">Company Info</a></li>
+                          <li><a href="MsUsers.aspx">Users</a></li>
+                          <li><a href="MsDept.aspx">Deparment</a></li>
+                          <li><a href="MsApproval.aspx">Approval</a></li>
+                          <li><a href="MsFaults.aspx">Faults</a></li>
+                          <li><a href="MsMeterDetail.aspx">MeterDetail</a></li>
+                    </ul>
+                    </li>
+                     <li><a href="#">Transaction</a>
+                     <ul class="transsub">
+                        <li><a href="MsTrouble.aspx">Trouble</a></li>
+                        <li><a href="MsRouter.aspx">Router</a></li>
+                        <li><a href="#">EnergyReturn</a></li>
+                      
+                    </ul>
+                     </li>
+                     <li><a href="#">Report</a>
+                            <ul class="rptsub">
+                                   <li><a href="#">Listing</a>
+                                        <ul class="listsub">
+                                        <li><a href="DeptRpt.aspx">Dept</a></li>
+                                        <li><a href="FaultRpt.aspx">Faults</a></li>
+                                        <li><a href="#">Meters</a></li>
+                                  </ul>
+                             
+                             </li>
+                             <li><a href="TroubleRpt.aspx">Trouble</a></li>
+                             <li><a href="#">Sales</a></li>
+                             <li><a href="#">Creditors</a></li>
+                             <li><a href="#">Debtors</a></li>
+                         </ul>
+                     
+                     </li>
+               
+            </ul>
+     </div>
+    <div class="leftbar"></div>
+    <div class="rightbar">
+        <asp:ContentPlaceHolder id="ContentPlaceHolder2" runat="server">
+        </asp:ContentPlaceHolder>
+    </div>
+    <div class="content">
+     <asp:ContentPlaceHolder id="ContentPlaceHolder1" runat="server">
+        </asp:ContentPlaceHolder>
+    </div>
+    </div>
+   
+       
+    
+    </form>
+</body>
+</html>

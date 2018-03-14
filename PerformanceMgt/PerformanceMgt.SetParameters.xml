@@ -1,0 +1,6 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<parameters>
+  <setParameter name="IIS Web Application Name" value="www.cmms.com" />
+  <setParameter name="performgtConnectionString-Web.config Connection String" value="Data Source=DESKTOP-95O9GVD;Initial Catalog=performgt;Persist Security Info=True;User ID=sa;Password=fanny" />
+  <setParameter name="performgtConnectionString1-Web.config Connection String" value="Data Source=localhost\sqlexpress;Initial Catalog=master;Persist Security Info=True;User ID=sa;Password=fanny" />
+</parameters>

@@ -1,0 +1,207 @@
+﻿body {
+    background: #F7F7F7;
+}
+
+/*Set image width in carousel*/
+.carousel-inner img{
+    width: 100%;
+}
+
+@media only screen and (max-width: 600px) {
+    .carousel-inner img {
+        height: 400px;
+    }
+
+    .collapse.responsive {
+        position: relative;
+    }
+
+    .collapse.responsive a.icon {
+            position: absolute;
+            right: 0;
+            top: 0;
+    }
+
+    .collapse.responsive a {
+            float: none;
+            display: block;
+            text-align: left;
+    }
+
+    .thumbnail{
+        padding-bottom: 80px;
+    }
+}
+
+.nav li a {
+    font-size: 1.4em; color: red;
+}
+
+.nav li{
+    color:orange;
+}
+
+/*Carousel area*/
+#carousel-first{
+    padding-top: 80px;
+}
+
+/*First content area after carousel*/
+#content1{
+    padding-top: 100px;
+    padding-bottom: 100px;
+    background-color: #f7f7f7;
+}
+
+/*Gallery Section*/
+.gallery {
+    font-family: Quattrocento Sans;
+    font-size: 2.5em;
+    text-align: center;
+    padding-bottom: 30px;
+}
+
+/*CSS for hover effect on Image gallery thumbnails*/
+
+.thumbnail {
+    float: left;
+    width: 300px;
+    height: 300px;
+    position: relative;
+    margin: 10px;
+    cursor: pointer;
+    /*overflow: hidden;*/ /*To make the rest of the content lie within a given height*/
+}
+
+.thumbnail:hover {
+    box-shadow: 0 2px 5px 5px #FF7F50;
+}
+
+    .thumbnail img {
+        max-width: 80%;
+        height: 100%;
+        transition: transform 0.4s;
+        /*position: absolute;*/ /*To overlap the image caption content on top of the image*/
+    }
+
+
+
+/*Thumbnail image caption*/
+.caption {
+    width: 100%;
+    height: 80px;
+    background: rgba(0, 0, 0, 0.7);
+    position: absolute;
+    margin-left: -4px;
+    top: auto;
+    bottom: 0;
+    opacity: 0;
+    transform: translateY(100%);
+    transition: transform 0.4s, opacity 0.1s 0.3s;
+}
+
+.thumbnail:hover img,
+.thumbnail.cs-hover img {
+    transform: translateY(-50px);
+}
+
+.thumbnail:hover .caption,
+.thumnail.cs-hover .caption {
+    opacity: 1;
+    transform: translateY(0px);
+    transition: transform 0.4s, opacity 0.1s;
+}
+
+/*Send link tag to bottom of thumbnail while on hover*/
+.caption a {
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+}
+
+.caption h3 {
+    padding: 5px 0px 5px 0px;
+    text-align: left;
+    text-transform: uppercase;
+    font-size: 1.5em;
+    color: #FF7F50;
+    font-family: Doppio One;
+}
+
+/*Footer section*/
+#footer{
+    height:300px;
+    background-color: black;
+    padding-top: 80px;
+    
+}
+
+    #footer h4 {
+    color: rgba(255, 255, 255, 0.9);
+    text-align:justify;
+}
+
+.company-list-items li{
+    list-style: none;
+    margin-left: -25px;
+    }
+
+.company-list-items li a:hover {
+        color: rgba(255, 160, 0, 0.7);
+    }
+
+.company-list-items li a {
+     text-align: justify;
+     color: rgba(169, 169, 169, 0.5);
+     display: block;
+    }
+
+.address, .info{
+    color: rgba(255, 106, 0, 0.7);
+    font-size: 0.8em;
+}
+
+/*Social media icons CSS*/
+.fa {
+    padding: 20px;
+    font-size: 1.0em;
+    width: 20px;;
+    text-align: center;
+    text-decoration: none;
+    margin: 5px 2px;
+    border-radius: 50%;
+}
+
+.fa-facebook {
+    background: rgba(255, 106, 0, 0.7);
+    color: white;
+}
+.fa-facebook:hover {
+        background: #3B5998;
+        color: white;
+    }
+
+.fa-twitter {
+    background: rgba(255, 106, 0, 0.7);
+    color: white;
+}
+
+.fa-twitter:hover {
+    background: #55ACEE;
+    color: white;
+}
+
+.fa-instagram {
+    background: rgba(255, 106, 0, 0.7);
+    color: white;
+}
+
+.fa-instagram:hover {
+    background: #125688;
+    color: white;
+}
+
+.social-media-icons{
+    display: inline;
+    float: left;
+}

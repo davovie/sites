@@ -1,0 +1,79 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="MaintainMaster.master.cs" Inherits="MasterPage" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title>Home</title>
+    <link href="mtnmaster.css" rel="stylesheet" type="text/css" />
+    <asp:ContentPlaceHolder id="head" runat="server">
+    1
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+    <div class="container">
+    <div class="header"></div>
+     <div class="menu">
+     <ul id="menu">
+                <li><a href="MsLogin.aspx">File</a>
+                       <ul class="filesub">
+                          <li><a href="MsLogin.aspx">Login</a></li>
+                            <li><a href="#">Backup</a></li>
+                            <li><a href="#">Logout</a></li>
+                       </ul>
+                      </li> 
+                    <li><a href="#">Maintaince</a>
+                    <ul class="mtcesub">
+                          <li><a href="#">Company Info</a></li>
+                          <li><a href="MsUsers.aspx">Users</a></li>
+                          <li><a href="MsDept.aspx">Deparment</a></li>
+                          <li><a href="MsApproval.aspx">Approval</a></li>
+                          <li><a href="MsFaults.aspx">Faults</a></li>
+                          <li><a href="MsMeterDetail.aspx">MeterDetail</a></li>
+                    </ul>
+                    </li>
+                     <li><a href="#">Transaction</a>
+                     <ul class="transsub">
+                        <li><a href="MsTrouble1.aspx">Trouble</a></li>
+                        <li><a href="MsRouter.aspx">Router</a></li>
+                        <li><a href="#">Receive Money</a></li>
+                        <li><a href="#">Make Payment</a></li>
+                    </ul>
+                     </li>
+                     <li><a href="#">Report</a>
+                            <ul class="rptsub">
+                                   <li><a href="#">Listing</a>
+                                        <ul class="listsub">
+                                        <li><a href="DeptRpt.aspx">Dept</a></li>
+                                        <li><a href="FaultRpt.aspx">Faults</a></li>
+                                        <li><a href="#">Suppliers</a></li>
+                                  </ul>
+                             
+                             </li>
+                            <li><a href="TroubleRpt.aspx">Trouble</a></li>
+                             <li><a href="#">Sales</a></li>
+                             <li><a href="#">Creditors</a></li>
+                             <li><a href="#">Debtors</a></li>
+                         </ul>
+                     
+                     </li>
+               
+            </ul>
+     </div>
+    <div class="leftbar"></div>
+    <div class="rightbar">
+        <asp:ContentPlaceHolder id="ContentPlaceHolder2" runat="server">
+        2
+        </asp:ContentPlaceHolder>
+    </div>
+    <div class="content">
+     <asp:ContentPlaceHolder id="ContentPlaceHolder1" runat="server">
+        </asp:ContentPlaceHolder>
+    </div>
+    <div class="footer"></div>
+       
+    </div>
+    </form>
+</body>
+</html>

@@ -1,0 +1,82 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="DsDept" targetNamespace="http://tempuri.org/DsDept.xsd" xmlns:mstns="http://tempuri.org/DsDept.xsd" xmlns="http://tempuri.org/DsDept.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+          <Connection AppSettingsObjectName="Web.config" AppSettingsPropertyName="performgtConnectionString" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly" Name="performgtConnectionString (Web.config)" ParameterPrefix="@" PropertyReference="AppConfig.System.Configuration.ConfigurationManager.0.ConnectionStrings.performgtConnectionString.ConnectionString" Provider="System.Data.SqlClient" />
+        </Connections>
+        <Tables>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="deptviewTableAdapter" GeneratorDataComponentClassName="deptviewTableAdapter" Name="deptview" UserDataComponentName="deptviewTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="performgtConnectionString (Web.config)" DbObjectName="performgt.dbo.deptview" DbObjectType="View" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="false" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>SELECT compname0, compadd3, deptcode, dept, compadd0 FROM dbo.deptview</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="compname0" DataSetColumn="compname0" />
+              <Mapping SourceColumn="compadd3" DataSetColumn="compadd3" />
+              <Mapping SourceColumn="deptcode" DataSetColumn="deptcode" />
+              <Mapping SourceColumn="dept" DataSetColumn="dept" />
+              <Mapping SourceColumn="compadd0" DataSetColumn="compadd0" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
+        </Tables>
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="DsDept" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:Generator_UserDSName="DsDept" msprop:Generator_DataSetName="DsDept">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="deptview" msprop:Generator_TableClassName="deptviewDataTable" msprop:Generator_TableVarName="tabledeptview" msprop:Generator_TablePropName="deptview" msprop:Generator_RowDeletingName="deptviewRowDeleting" msprop:Generator_RowChangingName="deptviewRowChanging" msprop:Generator_RowEvHandlerName="deptviewRowChangeEventHandler" msprop:Generator_RowDeletedName="deptviewRowDeleted" msprop:Generator_UserTableName="deptview" msprop:Generator_RowChangedName="deptviewRowChanged" msprop:Generator_RowEvArgName="deptviewRowChangeEvent" msprop:Generator_RowClassName="deptviewRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="compname0" msprop:Generator_ColumnVarNameInTable="columncompname0" msprop:Generator_ColumnPropNameInRow="compname0" msprop:Generator_ColumnPropNameInTable="compname0Column" msprop:Generator_UserColumnName="compname0" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="compadd3" msprop:Generator_ColumnVarNameInTable="columncompadd3" msprop:Generator_ColumnPropNameInRow="compadd3" msprop:Generator_ColumnPropNameInTable="compadd3Column" msprop:Generator_UserColumnName="compadd3" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="deptcode" msprop:Generator_ColumnVarNameInTable="columndeptcode" msprop:Generator_ColumnPropNameInRow="deptcode" msprop:Generator_ColumnPropNameInTable="deptcodeColumn" msprop:Generator_UserColumnName="deptcode">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="dept" msprop:Generator_ColumnVarNameInTable="columndept" msprop:Generator_ColumnPropNameInRow="dept" msprop:Generator_ColumnPropNameInTable="deptColumn" msprop:Generator_UserColumnName="dept" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="compadd0" msprop:Generator_ColumnVarNameInTable="columncompadd0" msprop:Generator_ColumnPropNameInRow="compadd0" msprop:Generator_ColumnPropNameInTable="compadd0Column" msprop:Generator_UserColumnName="compadd0" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

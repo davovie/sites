@@ -1,0 +1,100 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="ALongMaster.master.cs" Inherits="ALongMaster" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title>Home</title>
+    <link href="ALongmaster.css" rel="stylesheet" type="text/css" />
+    <asp:ContentPlaceHolder id="head" runat="server">
+    1
+    </asp:ContentPlaceHolder>
+    <style type="text/css">
+        .style1
+        {
+            width: 100%;
+            height: 46px;
+        }
+        .style2
+        {
+            width: 100%;
+            height: 51px;
+        }
+       
+        .jumbotron {
+            height: 150px;
+            padding-top: 30px!important;
+            background-color: lime;
+            margin-bottom: 2px;
+        }
+       .form-control{
+           width: 100%;
+       }
+    </style>
+</head>
+<body>
+    <form id="form1" runat="server">
+    <div class="container">
+    <div class="header">
+        <div class="jumbotron">
+           <h1 class="page-header">CMMS! <small>Omotosho Electric Energy Company Limited</small></h1>
+        </div>
+        </div>
+
+     <div class="menu">
+     <ul id="menu">
+                <li><a href="Default.aspx">Home</a> </li> 
+                    <li><a href="#">Maintaince</a>
+                    <ul class="mtcesub">
+                         
+                          <li><a href="MsUsers.aspx">Users</a></li>
+                          <li><a href="MsDept.aspx">Deparment</a></li>
+                          <li><a href="MsApproval.aspx">Approval</a></li>
+                          <li><a href="MsFaults.aspx">Faults</a></li>
+                          <li><a href="MsMeterDetail.aspx">MeterDetail</a></li>
+                    </ul>
+                    </li>
+                     <li><a href="#">Trouble</a>
+                     <ul class="transsub">
+                        <li><a href="MsTrouble2.aspx">Reporting</a></li>
+                        <li><a href="MsTroubleCheck.aspx">Checking</a></li>
+                        <li><a href="MsEnergyReturn.aspx">Energy Return</a></li>
+                        
+                    </ul>
+                     </li>
+                     <li><a href="#">Report</a>
+                            <ul class="rptsub">
+                                   <li><a href="#">Listing</a>
+                                        <ul class="listsub">
+                                        <li><a href="DeptRpt.aspx">Dept</a></li>
+                                        <li><a href="FaultRpt.aspx">Faults</a></li>
+                                        <li><a href="#">Suppliers</a></li>
+                                  </ul>
+                             
+                             </li>
+                             <li><a href="TroubleRpt.aspx">Trouble</a></li>
+                             <li><a href="#">Sales</a></li>
+                             <li><a href="#">Creditors</a></li>
+                             <li><a href="#">Debtors</a></li>
+                         </ul>
+                     
+                     </li>
+                <li><a href="../Login.aspx">Logout</a></li>
+            </ul>
+     </div>
+    <div class="leftbar"></div>
+    <div class="rightbar"></div>
+    <div class="content">
+     <asp:ContentPlaceHolder id="ContentPlaceHolder1" runat="server">
+        
+        </asp:ContentPlaceHolder>
+    </div>
+        <div id= "footer"> <p>All Right Reserved Precise IT Affairs</p></div>
+    </div>
+    
+
+      
+    
+    </form>
+</body>
+</html>
